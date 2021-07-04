@@ -18,7 +18,7 @@ const Main = () => {
             You can use SMART goals for any goal you want to achieve, whether it is short-term, long-term, career-driven, or fitness-related.
             </MainStyle><br /><br />
 
-            <Button>tap here</Button>to learn more!
+            {/* <Button>tap here</Button>to learn more! */}
         </>
     );
 };

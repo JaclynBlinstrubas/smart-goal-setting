@@ -5,6 +5,8 @@ import Users from "./components/Users";
 import { Header } from "./components/HeaderStyle";
 import { A } from "./components/AStyle";
 import Signup from "./components/Signup";
+import Modal from "./components/Modal";
+
 
 
 function App(props) {
@@ -16,6 +18,7 @@ function App(props) {
         <Route path="/" exact component={Main} />
         <Route path="/users" exact component={Users} />
         <Route path="/signup" exact component={Signup} />
+        <Route path="/smart-modal" exact component={Modal} />
       </main>
     </>
   );
