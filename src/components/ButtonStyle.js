@@ -5,7 +5,7 @@ export const Button = styled.button`
     text-align: center;
     font-weight: bold;
     color: #86D0C2;
-    border: none;
+    /* border: none; */
     background-color: white;
 
 `;
