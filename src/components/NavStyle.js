@@ -5,7 +5,13 @@ export const NavStyle = styled.a`
     text-align: center;
     font-weight: bold;
     color: #86D0C2;
-    /* border: none; */
     background-color: white;
-
 `;
+
+export const NavBar = styled.li`
+    font-size: 20px;
+    font-weight: bold;
+    color: #86D0C2;
+    display: inline;
+    text-decoration: none;
+`

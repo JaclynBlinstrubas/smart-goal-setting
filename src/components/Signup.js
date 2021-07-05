@@ -1,6 +1,6 @@
 import React, { UseState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { SignupStyle } from './SignupStyle';
+import { FormStyle } from './FormStyle';
 
 
 
@@ -8,7 +8,7 @@ import { SignupStyle } from './SignupStyle';
 const Signup = () => {
 
     return (
-        <SignupStyle>
+        <FormStyle>
             <Form><br /><br />
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>email address  </Form.Label>
@@ -23,7 +23,7 @@ const Signup = () => {
                     submit
                 </Button>
             </Form>
-        </SignupStyle>
+        </FormStyle>
     );
 };
 
