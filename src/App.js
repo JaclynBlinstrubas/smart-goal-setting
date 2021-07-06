@@ -14,7 +14,6 @@ import GoalForm from "./components/GoalForm";
 import { NavBar } from "./components/NavStyle"
 
 
-
 function App(props) {
 
   return (
