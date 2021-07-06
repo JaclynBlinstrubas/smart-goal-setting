@@ -22,6 +22,9 @@ function App(props) {
     
 
       <Nav className="nav" activeKey="/home">
+      <Nav.Item>
+          <Nav.Link href="/learn-more">What are SMART goals?</Nav.Link>
+        </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/signup">Sign Up</Nav.Link>
         </Nav.Item>
@@ -31,6 +34,9 @@ function App(props) {
         <Nav.Item>
           <Nav.Link href="/ideas">Examples and Ideas</Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/form">Add your goals here!</Nav.Link>
+        </Nav.Item>
       </Nav>
 
       
@@ -39,7 +45,7 @@ function App(props) {
         <Route path="/" exact component={Main} />
         <Route path="/users" exact component={Users} />
         <Route path="/signup" exact component={Signup} />
-        <Route path="/modal" exact component={Modal} />
+        <Route path="/learn-more" exact component={Modal} />
         <Route path="/header" exact component={Header} />
         <Route path="/ideas" exact component={Ideas} />
         <Route path="/form" exact component={GoalForm} />
