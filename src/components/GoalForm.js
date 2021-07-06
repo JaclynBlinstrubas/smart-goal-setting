@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { FormStyle } from './FormStyle';
 
 const GoalForm = () => {
+    const [goalForm, setGoalForm] = useState();
 
+    useEffect(() => {
+        const url = 'http://localhost:8000/goal/' 
+    
+        fetch(url)
+            .then(result => result.json())
+            .then((result) => {
+                setGoalForm(result)
+            })
+    }, []);
 
     
     return (

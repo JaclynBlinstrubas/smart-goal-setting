@@ -1,4 +1,4 @@
-import React, { UseState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { FormStyle } from './FormStyle';
 
@@ -6,6 +6,18 @@ import { FormStyle } from './FormStyle';
 
 
 const Signup = () => {
+    const [signUp, setSignUp] = useState();
+
+    useEffect(() => {
+        const url = 'http://127.0.0.1:8000/token/login/' 
+    
+        fetch(url)
+            .then(result => result.json())
+            .then((result) => {
+                setSignUp(result)
+            })
+    }, []);
+
 
     return (
         <FormStyle>
