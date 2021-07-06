@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Link, Redirect } from "react-router-dom";
+import Main from "./components/Main";
+import Users from "./components/Users";
+import { HeaderStyle } from "./components/HeaderStyle";
+import { A } from "./components/AStyle";
+import Signup from "./components/Signup";
+import Modal from "./components/Modal";
+import Header from "./components/Header";
+import Ideas from "./components/Ideas";
+import { Nav } from "react-bootstrap";
+import { Button } from "./components/ButtonStyle"
+import GoalForm from "./components/GoalForm";
+import { NavBar } from "./components/NavStyle"
 
-function App() {
+
+function App(props) {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderStyle><A href='/'>S M A R T</A></HeaderStyle>
+    
+
+      <Nav className="nav" activeKey="/home">
+        <Nav.Item>
+          <Nav.Link href="/signup">Sign Up</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/users">Your Account</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/ideas">Examples and Ideas</Nav.Link>
+        </Nav.Item>
+      </Nav>
+
+      
+
+      <main>
+        <Route path="/" exact component={Main} />
+        <Route path="/users" exact component={Users} />
+        <Route path="/signup" exact component={Signup} />
+        <Route path="/modal" exact component={Modal} />
+        <Route path="/header" exact component={Header} />
+        <Route path="/ideas" exact component={Ideas} />
+        <Route path="/form" exact component={GoalForm} />
+      </main>
+    </>
   );
-}
+};
 
 export default App;
