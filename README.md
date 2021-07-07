@@ -2,6 +2,10 @@
 
 This app allows users to create goals using the acronym SMART: specific, measurable, achievable, relevant, and time-based. SMART goals are established by using these five components to ensure your goals are attainable within a certain time frame.
 
+![Screen Shot 2021-07-06 at 9 47 50 PM](https://user-images.githubusercontent.com/80438770/124687873-d20c7780-dea3-11eb-81ae-245789393df8.png)
+
+![Screen Shot 2021-07-06 at 9 53 16 PM](https://user-images.githubusercontent.com/80438770/124688333-94f4b500-dea4-11eb-9b3c-fc02d5e4b56a.png)
+
 ## Technologies Used
 - ReactJS
 - Bootstrap
@@ -24,5 +28,8 @@ This app allows users to create goals using the acronym SMART: specific, measura
 ![Screen Shot 2021-07-06 at 12 17 16 PM](https://user-images.githubusercontent.com/80438770/124634234-1c660800-de54-11eb-9846-455bede3e861.png)
 
 ## Unsolved Problems and Major Hurdles
-- I tought myself styled components to style this app. I can see the benefits of styling this way, but its been tough to wrap my head around for this first time. 
-- 
+- I was unable to deploy a completed app. I could not get user authentication sorted out, and could not connect the front and back end. I look forward to working on this and spending the time to really understand it. 
+- I tought myself styled components to style this app. I can see the benefits of styling this way, but its been tough to wrap my head around for this first time implementing it. 
+- I am excited to practice these issues further to better understand how they work, and to become more comfortable with it. 
+- I was unable to add media queries for better viewing on mobile devices.
+
