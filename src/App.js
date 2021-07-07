@@ -12,6 +12,7 @@ import { Nav } from "react-bootstrap";
 import { Button } from "./components/ButtonStyle"
 import GoalForm from "./components/GoalForm";
 import { NavBar } from "./components/NavStyle"
+import GlobalStyles from "./components/GlobalStyle";
 
 
 function App(props) {
@@ -49,6 +50,7 @@ function App(props) {
         <Route path="/header" exact component={Header} />
         <Route path="/ideas" exact component={Ideas} />
         <Route path="/form" exact component={GoalForm} />
+        <GlobalStyles/>
       </main>
     </>
   );

@@ -3,16 +3,19 @@ import { Form, Button } from 'react-bootstrap';
 import { FormStyle } from './FormStyle';
 
 const GoalForm = () => {
-    const [goalForm, setGoalForm] = useState();
+
+    const [goalForm, setGoalForm] = useState("");
+    
 
     useEffect(() => {
-        const url = 'http://localhost:8000/goal/' 
-    
-        fetch(url)
-            .then(result => result.json())
-            .then((result) => {
-                setGoalForm(result)
-            })
+
+        const signUp = {
+            method: "POST",
+            body: JSON.stringify(GoalForm)
+        };
+        fetch("http://localhost:8000/goal/", signUp)
+            .then(response => response.json())
+            .then(data => setGoalForm(data.id))
     }, []);
 
     
