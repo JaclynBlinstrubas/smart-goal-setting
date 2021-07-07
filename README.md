@@ -33,3 +33,10 @@ This app allows users to create goals using the acronym SMART: specific, measura
 - I am excited to practice these issues further to better understand how they work, and to become more comfortable with it. 
 - I was unable to add media queries for better viewing on mobile devices.
 
+#### Sources Used
+- https://git.generalassemb.ly/SEIR-412/drf-token-auth
+- https://react-bootstrap.github.io/components/forms/
+- https://www.pluralsight.com/guides/working-with-bootstraps-modals-react
+- https://stackoverflow.com/questions/32238616/git-push-fatal-origin-does-not-appear-to-be-a-git-repository-fatal-could-n 
+- https://www.geeksforgeeks.org/how-to-connect-django-with-reactjs/
+- https://stackoverflow.com/questions/48433682/users-as-foreign-key-in-django
