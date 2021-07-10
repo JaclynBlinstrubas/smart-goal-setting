@@ -10,16 +10,20 @@ import Header from "./components/Header";
 import Ideas from "./components/Ideas";
 import { Nav } from "react-bootstrap";
 import { Button } from "./components/ButtonStyle"
-import GoalForm from "./components/GoalForm";
-import { NavBar } from "./components/NavStyle"
-import GlobalStyles from "./components/GlobalStyle";
+import CreateGoalForm from "./components/CreateGoalForm";
+import { NavBar } from "./components/NavStyle";
+import Login from "./components/Login";
+import UserGoals from "./components/UserGoals";
+
 
 
 function App(props) {
 
   return (
     <>
-      <HeaderStyle><A href='/'>S M A R T</A></HeaderStyle>
+      <HeaderStyle>
+        <A href='/'>S M A R T</A>
+      </HeaderStyle>
     
 
       <Nav className="nav" activeKey="/home">
@@ -38,6 +42,9 @@ function App(props) {
         <Nav.Item>
           <Nav.Link href="/form">Add your goals here!</Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/login">Login</Nav.Link>
+        </Nav.Item>
       </Nav>
 
       
@@ -49,8 +56,9 @@ function App(props) {
         <Route path="/learn-more" exact component={Modal} />
         <Route path="/header" exact component={Header} />
         <Route path="/ideas" exact component={Ideas} />
-        <Route path="/form" exact component={GoalForm} />
-        <GlobalStyles/>
+        <Route path="/form" exact component={CreateGoalForm} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/usergoals" exact component={UserGoals} />
       </main>
     </>
   );

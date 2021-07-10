@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-bootstrap/Modal";
-import { ModalShowButton } from "./ModalStyle";
 
 const SMARTmodal = () => {
     const [isOpen, setIsOpen] = React.useState(false);
