@@ -24,8 +24,7 @@ function App(props) {
     
 
       <ul className="nav" activeKey="/home">
-          <A href="/learn-more">What are SMART goals?</A>
-          <A href="/ideas">Examples and Ideas</A>
+          <A href="/ideas">Examples and Ideas</A> <br />
           <A href="/form">Add your goals here!</A>
       </ul>
 

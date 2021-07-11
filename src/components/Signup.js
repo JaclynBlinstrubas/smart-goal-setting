@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { FormStyle } from './FormStyle';
 import { Link } from 'react-router-dom';
  
 const Signup = () => {
@@ -26,24 +25,25 @@ const Signup = () => {
     };
             
     return (
-        <FormStyle>
-            <div className="form">
-                <form onSubmit={signUp}>
-                    <label htmlFor="username">create a username </label>
-                    <input id="username" type="text" onChange={handleChange} />
-                    <label htmlFor="email">enter your email</label>
-                    <input id="email" type="text" onChange={handleChange} />
-                    <label htmlFor="password">create a password </label>
-                    <input id="password" type="text" onChange={handleChange} />
-                    <label htmlFor="password">re-enter password </label>
-                    <input id="re_password" type="text" onChange={handleChange} />
-                    <button type="submit" className="submit-button">submit </button>
-                    {error ? (
-                        <p>password or email is incorrect, pleast try again.</p>
-                    ) : null}
-                </form>
-            </div>
-        </FormStyle>
+        <>
+        <p>create your own account below to add and keep track of your goals!</p>
+        <div className="form">
+            <form onSubmit={signUp}>
+                <label htmlFor="username">create a username </label>
+                <input id="username" type="text" onChange={handleChange} /><br /><br />
+                <label htmlFor="email">enter your email </label>
+                <input id="email" type="text" onChange={handleChange} /><br /><br />
+                <label htmlFor="password">create a password </label>
+                <input id="password" type="text" onChange={handleChange} /><br /><br />
+                <label htmlFor="password">re-enter password </label>
+                <input id="re_password" type="text" onChange={handleChange} /><br /><br />
+                <button type="submit" className="submit-button">[ submit ]</button>
+                {error ? (
+                    <p>password or email is incorrect, pleast try again.</p>
+                ) : null}
+            </form>
+        </div>
+        </>
     );
 };
 

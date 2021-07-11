@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { FormStyle } from './FormStyle';
 
 
 // this form is used to create a new goal
@@ -47,39 +46,33 @@ const CreateGoalForm = () => {
 
 
     return (
-        <FormStyle>
-        <div>
             <div className='goal-form'>
                 <form onSubmit={handleSubmit}>
 
                     <label htmlFor="specific">SPECIFIC </label>
-                    <input id="specific" type="text" placeholder="add your goal here" onChange={handleChange} />
+                    <input id="specific" type="text" placeholder="add your goal here" onChange={handleChange} /><br /><br />
 
                     <label htmlFor="measureable">MEASUREABLE </label>
-                    <input id="measureable" type="text" placeholder="how will you measure your goal?" onChange={handleChange} />
+                    <input id="measureable" type="text" placeholder="how will you measure your goal?" onChange={handleChange} /><br /><br />
 
                     <label htmlFor="achievable">ACHIEVABLE </label>
-                    <input id="achievable" type="text" placeholder="what are the steps to reach your goal?" onChange={handleChange} />
+                    <input id="achievable" type="text" placeholder="what are the steps to reach your goal?" onChange={handleChange} /><br /><br />
 
                     <label htmlFor="relevant">RELEVANT </label>
-                    <input id="relevant" type="text" placeholder="what does your goal mean to you?" onChange={handleChange} />
+                    <input id="relevant" type="text" placeholder="what does your goal mean to you?" onChange={handleChange} /><br /><br />
 
                     <label htmlFor="timely">TIMELY </label>
-                    <input id="timely" type="text" placeholder="what is the time frame to reach your goal?" onChange={handleChange} />
+                    <input id="timely" type="text" placeholder="what is the time frame to reach your goal?" onChange={handleChange} /><br /><br />
 
                     <label htmlFor="overall_goal">YOUR GOAL </label>
-                    <input id="overall_goal" type="text" placeholder="put it all together" onChange={handleChange} />
+                    <input id="overall_goal" type="text" placeholder="put it all together" onChange={handleChange} /><br /><br />
 
                     <label htmlFor="notes">NOTES </label>
-                    <input id="notes" type="text" placeholder="any extra notes" onChange={handleChange} />
-                    <br />
-                    <button type='submit' className='submit-goal-button'>
-                        submit
-                    </button>
+                    <input id="notes" type="text" placeholder="any extra notes" onChange={handleChange} /><br /><br />
+                    
+                    <button className="submit-button" type="submit">[ submit ]</button>
                 </form>
             </div>
-        </div>
-        </FormStyle>
     );
 };
 

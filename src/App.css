@@ -26,7 +26,7 @@ a {
 .modal-button {
     font-size: 20px;
     text-align: center;
-    color: #272727;
+    color: #86D0C2;
     background-color: white;
     text-decoration: none;
     border: none;
@@ -71,8 +71,41 @@ a {
     text-decoration: none;
 }
 
+.form {
+    margin: auto;
+    width: 50%;
+    padding: 40px 0 40px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #272727;
+    border: 1px lightgray solid;
+}
 
+.signup-link {
+    color: #86D0C2;
+    letter-spacing: 4px;
+}
 
+.submit-button {
+    font-size: 20px;
+    text-align: center;
+    color: #86D0C2;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    transition-duration: 0.4s;
+    letter-spacing: 4px;
+    padding: 15px;
+    cursor: pointer;
+}
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+input[type="text"] {
+    width: 280px;
+}
 /********** 
 
 @media only screen and (max-width: 600px){

@@ -42,28 +42,23 @@ const LoginForm = ({ setUser }) => {
         }
     };
 return (
-        <div>
-            <div className='login-form'>
-                <form onSubmit={handleSignIn}>
-                    <label htmlFor='email'>Email</label>
-                    <input id='email' type='text' onChange={handleChange} />
-                    <label htmlFor='password'>Password</label>
-                    <input id='password' type='text' onChange={handleChange} />
-                    <button type='submit' className='submit-button'>
-                        submit
-                    </button>
-                    {error ? (
-                        <p>password or email is incorrect, please try again.</p>
-                    ) : null}
-                    <p className="signup-text">
-                        need an account? sign up{' '}
-                        <Link to='/signup'>
-                            <span>here</span>
-                        </Link>
-                        . 
-                    </p>
-                </form>
-            </div>
+        <div className='form'>
+            <form onSubmit={handleSignIn}>
+                <label htmlFor='email'>Email </label>
+                <input id='email' type='text' onChange={handleChange} /><br /><br />
+                <label htmlFor='password'>Password </label>
+                <input id='password' type='text' onChange={handleChange} /><br /><br />
+                <button type='submit' className='submit-button'>[ submit ]</button>
+                {error ? (
+                    <p>password or email is incorrect, please try again.</p>
+                ) : null}
+                <p>need an account? sign up{' '}
+                    <Link to='/signup'>
+                        <span className="signup-link">[ here ]</span>
+                    </Link>
+                    . 
+                </p>
+             </form>
         </div>
     );
 };
