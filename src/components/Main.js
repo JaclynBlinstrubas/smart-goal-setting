@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Modal from "react-bootstrap/Modal";
-// import SmartModal from './SmartModal';
 
 const Main = () => {
 
@@ -42,7 +41,7 @@ const Main = () => {
             </Modal.Body>
         <button className="hide-modal" onClick={hideModal}>[ close ]</button>
 </Modal><br />
-        <a className="ideas-link" href="/ideas">[ tap here for examples & ideas ] </a>
+        <a className="link-style" href="/ideas">[ tap here for examples & ideas ] </a>
     </>
     );
 };

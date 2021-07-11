@@ -63,7 +63,7 @@ body {
     cursor: pointer;
 }
 
-.ideas-link{
+.link-style {
     text-decoration: none;
     font-weight: bolder;
     font-size: 20px;
@@ -106,6 +106,7 @@ body {
 .signup-link {
     color: #86D0C2;
     letter-spacing: 4px;
+    text-decoration: none;
 }
 
 .submit-button {

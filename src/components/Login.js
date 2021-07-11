@@ -54,7 +54,7 @@ return (
                 ) : null}
                 <p>need an account? sign up{' '}
                     <Link to='/signup'>
-                        <span className="signup-link">[ here ]</span>
+                        <a className="link-style">[ here ]</a>
                     </Link>
                     . 
                 </p>
