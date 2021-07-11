@@ -36,7 +36,6 @@ const CreateGoalForm = () => {
                     console.log(result)
                     if (result.auth_token) {
                         localStorage.setItem('user', formData.username)
-                        setTimeout(() => { window.location.href = '/usergoals' }, 1500)
                     }
 
                 })
