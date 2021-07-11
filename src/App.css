@@ -8,19 +8,17 @@ body {
 
 .header {
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     background-color: #86D0C2;
-    font-size: 50px;
-    letter-spacing: 15px;
-    text-align: center;
-    color: #272727;
     padding: 75px 0 0 0;
 }
 
-a {
+.header a {
     text-decoration: none;
     color: #272727;
-
+    font-size: 50px;
+    letter-spacing: 15px;
+    text-align: center;
 }
 
 .modal-button {
@@ -30,9 +28,9 @@ a {
     background-color: white;
     text-decoration: none;
     border: none;
-    transition-duration: 0.4s;
     letter-spacing: 4px;
     padding: 15px;
+    cursor: pointer;
 }
 
 .modal-title {
@@ -43,6 +41,7 @@ a {
 
 .modal {
     font-size: 20px;
+    font-weight: none;
     text-align: center;
     background-color: white;
     border: 1px #86D0C2 solid;
@@ -61,15 +60,38 @@ a {
     transition-duration: 0.4s;
     letter-spacing: 4px;
     padding: 15px;
+    cursor: pointer;
+}
+
+.ideas-link{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    color: #86D0C2;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 4px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+/* 
+.nav a{
+    font-size: 25px;
+    display: inline;
+    color: white;
 }
 
 .navbar {
-    font-size: 20px;
-    font-weight: bold;
-    color: #86D0C2;
-    display: inline;
-    text-decoration: none;
-}
+    width: 100vw;
+    background-color: #86D0C2;
+    padding: 40px 0 40px 0;
+} */
+
+
 
 .form {
     margin: auto;
