@@ -8,7 +8,7 @@ body {
 
 .header {
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
     background-color: #86D0C2;
     padding: 75px 0 0 0;
 }
@@ -78,20 +78,22 @@ body {
 }
 
 
-/* 
-.nav a{
+
+.navbar a{
     font-size: 25px;
     display: inline;
     color: white;
+    text-decoration: none;
+    margin-right: 40px;
 }
 
 .navbar {
     width: 100vw;
     background-color: #86D0C2;
-    padding: 40px 0 40px 0;
-} */
-
-
+    padding: 10px;
+    text-align: right; 
+    border-bottom: 40px;
+}
 
 .form {
     margin: auto;

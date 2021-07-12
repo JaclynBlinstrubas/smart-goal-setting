@@ -42,6 +42,7 @@ const LoginForm = ({ setUser }) => {
         }
     };
 return (
+
         <div className='form'>
             <form onSubmit={handleSignIn}>
                 <label htmlFor='email'>Email </label>
