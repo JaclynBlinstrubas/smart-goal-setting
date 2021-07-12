@@ -1,49 +1,55 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Users = () => {
+const Users = ({ formData, setFormData }) => {
 
 
-    // const url = `http://localhost:8000/goal/`;
+    const url = `http://localhost:8000/goal/`;
 
-    // const [goal, setGoal] = useState('');
+    fetch(url, {
+        method: "GET",
+        headers: {
+            "Content-type": "application/json",
+            "Authorization": `Token ${localStorage.getItem("token")}`,
+        },
 
-    // fetch(url, {
-    //     method: "GET",
-    //     headers: {
-    //         "Content-type": "application/json",
-    //         "Authorization": `Token ${localStorage.getItem("token")}`,
-    //     },
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(formData);
+            // if login is successful
+            if (data.auth_token) {
+                localStorage.setItem('user', formData.username)
+            }
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
 
-    // })
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //         console.log(data);
-    //         // if login is successful
-    //         if (data.auth_token) {
-    //             localStorage.setItem('user', goal.username)
-    //         }
-    //     })
-    //     .catch((error) => {
-    //         console.error("Error:", error);
-    //     });
-
+    if (formData == "hello") {
+        return <p>loading..</p>
+    }
+    console.log(formData)
 
     return (
-        // <div className="goal-card">
-        //     Your Goals: 
-        //     <p>SPECIFIC: {goal.specific}</p>
-        //     <p>MEASUREABLE: {goal.measureable}</p>
-        //     <p>ACHIEVABLE: {goal.achievable}</p>
-        //     <p>RELEVANT: {goal.relevant}</p>
-        //     <p>TIMELY: {goal.timely}</p>
-        //     <p>OVERALL GOAL: {goal.overall_goal}</p>
-        //     <p>NOTES: {goal.notes}</p>
-        // </div>
-
         <>
-            <br /><a className="link-style" href="/form"> [ create a new goal here ]</a> or  
-            <a className="link-style" href="/goal">[ see your saved goals ]</a>
+        {/* <br /><a className="link-style" href="/form"> [ create a new goal here ]</a> or  
+            <a className="link-style" href="/goal">[ see your saved goals ]</a><br /><br /> */}
+
+
+        <div className="goal-card">
+            Your Goals: 
+            <p>SPECIFIC: {formData.specific}</p>
+            <p>MEASUREABLE: {formData.measureable}</p>
+            <p>ACHIEVABLE: {formData.achievable}</p>
+            <p>RELEVANT: {formData.relevant}</p>
+            <p>TIMELY: {formData.timely}</p>
+            <p>OVERALL GOAL: {formData.overall_goal}</p>
+            <p>NOTES: {formData.notes}</p>
+        </div>
+
+        
+            
         </>
     );
 };

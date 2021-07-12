@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from "react-router-dom";
 
 
-// this form is used to create a new goal
-const CreateGoalForm = () => {
+const CreateGoalForm = ({ formData, setFormData }) => {
 
     const formFields = {};
-    const [formData, setFormData] = useState(formFields);
-    const [message, setMessage] = useState("");
-    
+
     // setting data fields to user state
     const handleChange = (event) => {
         setFormData({ ...formData, [event.target.id]: event.target.value });
     };
+
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -25,13 +24,14 @@ const CreateGoalForm = () => {
                 headers: {
                     "Content-type": "application/json",
                     "Accept": "application/json",
-                    Authorization: `Token ${token}`
+                    "Authorization": `Token ${token}`
                 },
                 body: JSON.stringify(formData)
             })
                 .then((res) => res.json())
                 .then((result) => {
-                    console.log(result)
+                    setFormData(result)
+                    console.log(formData)
                     if (result.auth_token) {
                         localStorage.setItem('user', formData.username)
                     }
@@ -43,6 +43,9 @@ const CreateGoalForm = () => {
         }
     };
 
+    if (formData === undefined) {
+     return <p>loading..</p>
+    }
 
     return (
             <div className='goal-form'>
@@ -69,7 +72,7 @@ const CreateGoalForm = () => {
                     <label htmlFor="notes">NOTES </label>
                     <input id="notes" type="text" placeholder="any extra notes" onChange={handleChange} /><br /><br />
                     
-                    <button className="submit-button" type="submit">[ submit ]</button>
+                    <Link to="/users"><button className="submit-button" type="submit">[ submit ]</button></Link>
                 </form>
             </div>
     );
