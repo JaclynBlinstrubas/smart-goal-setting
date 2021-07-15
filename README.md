@@ -15,7 +15,8 @@ This app allows users to create goals using the acronym SMART: specific, measura
 ###### Goal Form Page
 ![Screen Shot 2021-07-15 at 1 53 08 PM](https://user-images.githubusercontent.com/80438770/125834467-4d69ca1d-0d4e-4e9d-a6ce-0824a4fd9b62.png)
 
-
+##   
+## [Click Here to Access S M A R T](https://jlb-smart-goal-setting.herokuapp.com/)
 
 ## Technologies Used
 - HTML
