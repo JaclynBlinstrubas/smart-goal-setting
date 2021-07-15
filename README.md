@@ -2,11 +2,24 @@
 
 This app allows users to create goals using the acronym SMART: specific, measurable, achievable, relevant, and time-based. SMART goals are established by using these five components to ensure your goals are attainable within a certain time frame.
 
-![Screen Shot 2021-07-06 at 9 47 50 PM](https://user-images.githubusercontent.com/80438770/124687873-d20c7780-dea3-11eb-81ae-245789393df8.png)
 
-![Screen Shot 2021-07-06 at 9 53 16 PM](https://user-images.githubusercontent.com/80438770/124688333-94f4b500-dea4-11eb-9b3c-fc02d5e4b56a.png)
+###### Main Page
+![Screen Shot 2021-07-15 at 1 50 24 PM](https://user-images.githubusercontent.com/80438770/125834082-abb8c6ba-064c-43d1-86cd-7c87bd94067c.png)
+
+###### Modal
+![Screen Shot 2021-07-15 at 1 54 03 PM](https://user-images.githubusercontent.com/80438770/125834611-1624ba75-401c-431b-a68b-fd71293e31f9.png)
+
+###### Sign Up Page
+![Screen Shot 2021-07-15 at 1 52 19 PM](https://user-images.githubusercontent.com/80438770/125834349-eac4a03a-9a5d-40ce-ae27-31ea0203a7fc.png)
+
+###### Goal Form Page
+![Screen Shot 2021-07-15 at 1 53 08 PM](https://user-images.githubusercontent.com/80438770/125834467-4d69ca1d-0d4e-4e9d-a6ce-0824a4fd9b62.png)
+
+
 
 ## Technologies Used
+- HTML
+- CSS
 - ReactJS
 - Bootstrap
 - Python / Django
@@ -28,10 +41,12 @@ This app allows users to create goals using the acronym SMART: specific, measura
 ![Screen Shot 2021-07-06 at 12 17 16 PM](https://user-images.githubusercontent.com/80438770/124634234-1c660800-de54-11eb-9846-455bede3e861.png)
 
 ## Unsolved Problems and Major Hurdles
-- I was unable to deploy a completed app. I could not get user authentication sorted out, and could not connect the front and back end. I look forward to working on this and spending the time to really understand it. 
-- I tought myself styled components to style this app. I can see the benefits of styling this way, but its been tough to wrap my head around for this first time implementing it. 
-- I am excited to practice these issues further to better understand how they work, and to become more comfortable with it. 
-- I was unable to add media queries for better viewing on mobile devices.
+- There are some navigations issues I need to address: after ```sign up``` and ```login```, the page should navigate to ```/users``` along with the form you can see at ```/form```. 
+- Initially I had a lot of trouble with user authentication and, with help, I was able to get it working! You can read about my struggles in my blog post [here](https://jaclyn-blinstrubas.medium.com/fourth-project-flop-42afc5320709).
+- I had intended on using styled components to style this app. I taught myself the basics, but with the project deadline and other basic functionality not working, I nixed styled components for now and went back to CSS.
+- I plan on practicing and updating this app with styled components.
+- This app would be likely be used on mobile devices, therefor my goal is to style it with media queries for a better mobile experience. 
+- I had big plans for this capstone project, however, due to time restraints I was unable to get everything in. I am looking forward to conitnue to work on and implement new features as I continue to learn! 
 
 #### Sources Used
 - https://git.generalassemb.ly/SEIR-412/drf-token-auth
