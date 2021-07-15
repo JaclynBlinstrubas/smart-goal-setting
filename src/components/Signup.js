@@ -7,7 +7,7 @@ const Signup = () => {
 
     const signUp = (event) => {
         event.preventDefault()
-        const url = 'http://localhost:8000/users/';
+        const url = 'https://jlb-smart-goal-be.herokuapp.com/users/';
         fetch(url, {
             method: 'POST', 
             headers: {'Content-Type': 'application/json'},

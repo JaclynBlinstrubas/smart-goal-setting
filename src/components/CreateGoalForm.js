@@ -14,7 +14,7 @@ const CreateGoalForm = ({ formData, setFormData }) => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        const url = `http://localhost:8000/goal/`;
+        const url = `https://jlb-smart-goal-be.herokuapp.com/goal/`;
         if (typeof window !== "undefined") {
 
             const token = localStorage.getItem("auth_token")

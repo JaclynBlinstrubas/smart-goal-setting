@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Users = ({ formData, setFormData }) => {
 
 
-    const url = `http://localhost:8000/goal/`;
+    const url = `https://jlb-smart-goal-be.herokuapp.com/goal/`;
 
     fetch(url, {
         method: "GET",

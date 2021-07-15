@@ -12,7 +12,7 @@ const LoginForm = ({ setUser }) => {
 
     function handleSignIn(event){
         event.preventDefault();
-        const url = `http://localhost:8000/token/login/`;
+        const url = `https://jlb-smart-goal-be.herokuapp.com/token/login/`;
         if (typeof window !== "undefined") {
 
             fetch(url, {
